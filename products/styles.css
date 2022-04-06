@@ -1,0 +1,292 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #F9F9F9;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+    color: black;
+    width: 50%;
+    height: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 10vh 25vh 80vh 15vh 80vh 30vh;
+    grid-template-columns: 100vw;
+    grid-template-areas: 
+    "nav-bar"
+    "new-arivals-title"
+    "new-arivals"
+    "summer-deals-title"
+    "summer-deals"
+    "footer";
+}
+
+
+.nav-bar {
+    margin: 0 auto;
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    width: 100vw;
+}
+
+nav {
+    height: 10vh;        
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    display: block;
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+li ul a {
+    background-color: rgb(148, 78, 137);
+}
+
+nav ul li a:hover{
+    background: #a329b3;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+nav ul li:hover > ul{
+    display: block;
+}
+
+nav ul ul li{
+    width: 150px;
+    float:none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul ul li{
+    position: relative;
+    top: -60px;
+    left: 150px;
+}
+
+nav img {
+    height: 10vh;
+    margin-left: 15px;
+}
+
+nav li a {
+    height: 10vh;
+}
+
+
+.home-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.content-title {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2em;
+    height: 18px;
+    align-self: end;
+}
+
+.item-content {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.8s;
+}
+
+.item-pic {
+    transition: 0.8s;
+}
+
+.item-content:hover {
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    transform: scale(1.03);
+}
+
+.item-content:hover .item-pic{
+    transform: scale(1.03);
+}
+
+.item-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.price {
+    background-color: #56cc13;
+    transition: 0.5s;
+}
+
+.price:hover span {
+  display: none
+}
+
+.price:hover:before {
+  content: "Buy Now";
+}
+
+#item1BuyNow:hover:before {
+  content: "Pre-Order Now";
+}
+
+.price:hover {
+    background-color: #12a627;
+    color: black;
+}
+
+.price:active {
+    color: white;
+    transition: 0s;
+}
+
+.add-to-cart {
+    margin-top: 5px;
+    color: black;
+    background-color: #ffbe00;
+    transition: 0.5s;
+}
+
+.add-to-cart:hover {
+    background-color: #ff5700;
+}
+
+.add-to-cart:active {
+    color: white;
+    background-color: #ff3d00;
+    transition: 0s;
+}
+
+.quantity {
+    position: absolute;
+    right: 30px;
+    bottom: 28px;
+    width: 32px;
+}
+
+.item-pic {
+    width: 25vw;
+    height: 40vh;
+    border-radius: 7px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer li {
+    list-style: none;
+}
+
+.footer {
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    padding: 70px;   
+}
+
+.footer-col{
+   width: 25vh;
+   padding: 0 10px;
+   display: inline;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width :50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration:none;
+    font-weight: 300;
+    color: #bbb;
+    display : block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #fff;
+    padding-left: 10px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #fff;
+    padding-left: 5px;
+}

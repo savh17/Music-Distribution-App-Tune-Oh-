@@ -1,0 +1,54 @@
+
+body {
+    margin: 5vh 10vw;
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li {
+    margin: 15px 0;
+}
+
+.frame {
+    display: grid;
+    grid-template-rows: 80vh;
+    grid-template-columns: 50vw 20vw;
+    grid-template-areas: "picture" "description";
+    background-color: #F9F9F9;
+    border-radius: 20px;
+    padding: 5vh 5vw;
+
+}
+
+.image {
+    margin: auto;
+}
+
+.image img {
+    height: 70vh;
+    width: 45vw;
+    border-radius: 10px;
+}
+
+.description {
+    margin: auto;
+}
+
+.role {
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.duties, .greet {
+    color: grey;
+}
+
+#fname {
+    margin-bottom: 5px;
+}
+
+#lname {
+    margin-top: 5px;
+}

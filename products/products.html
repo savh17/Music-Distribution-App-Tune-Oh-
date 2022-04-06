@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albums</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/65a196d9f2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <nav>
+                <img class="logo" src="images/logo.jpg" alt="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li>
+                        <a href="#">
+                            Pages <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <ul>
+                            <li><a href="#">Buy Products</a></li>
+                            <li><a href="#">Quiz</a></li>
+                            <li><a href="#">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="QueryForm.html">Contact Us</a></li>
+                    <li>
+                        <a id="viewCart" href="#">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </a>
+                </ul>
+            </nav>
+        </div>
+
+        <h2 class="content-title">NEW ARRIVALS</h2>
+
+        <div class="item-container">
+
+            <div class="item-content item-1">
+                <img class="item-pic" src="images/taylor-red.jpeg" alt="taylor_red_image">
+                <p>RED Taylor's Version</p>
+                <button id="item1BuyNow" class="price"><span>LKR 1999.99</span></button>
+                <br>
+                <button class="add-to-cart" id="item1">Add to Cart</button>
+                <input type="number" id="item1Qty" class="quantity" min="1" max="15" value="1">
+            </div>
+
+            <div class="item-content item-2">
+                <img class="item-pic" src="images/taylor-fearless.webp" alt="taylor_fearless_image">
+                <p>Fearless Taylor's Version</p>
+                <button id="item2BuyNow" class="price"><span>LKR 1499.99</span></button>
+                <br>
+                <button class="add-to-cart" id="item2">Add to Cart</button>
+                <input type="number" id="item2Qty" class="quantity" min="1" max="15" value="1">
+            </div>
+
+            <div class="item-content item-3">
+                <img class="item-pic" src="images/taylor-evermore.jpg" alt="taylor_evermore_image">
+                <p>Evermore Album</p>
+                <button id="item3BuyNow" class="price"><span>LKR 1299.99</span></button>
+                <br>
+                <button class="add-to-cart" id="item3">Add to Cart</button>
+                <input type="number" id="item3Qty" class="quantity" min="1" max="15" value="1">
+            </div>
+        </div>
+
+        <h2 class="content-title">SUMMER DEALS</h2>
+
+        <div class="item-container">
+
+            <div class="item-content item-4">
+                <img class="item-pic" src="images/taylor-folklore.jpg" alt="taylor_folklore_image">
+                <p>Folklore Album</p>
+                <button id="item4BuyNow" class="price"><span>LKR 699.99</span></button>
+                <br>
+                <button class="add-to-cart" id="item4">Add to Cart</button>
+                <input type="number" id="item4Qty" class="quantity" min="1" max="15" value="1">
+            </div>
+
+            <div class="item-content item-5">
+                <img class="item-pic" src="images/taylor-lover.png" alt="taylor_lover_image">
+                <p>Lover Album</p>
+                <button id="item5BuyNow" class="price"><span>LKR 699.99</span></button>
+                <br>
+                <button class="add-to-cart" id="item5">Add to Cart</button>
+                <input type="number" id="item5Qty" class="quantity" min="1" max="15" value="1">
+            </div>
+
+            <div class="item-content item-6">
+                <img class="item-pic" src="images/taylor-reputation-album.jpg" alt="taylor_reputation_image">
+                <p>Reputation Album</p>
+                <button id="item6BuyNow" class="price"><span>LKR 499.99</span></button>
+                <br>
+                <button class="add-to-cart" id="item6">Add to Cart</button>
+                <input type="number" id="item6Qty" class="quantity" min="1" max="15" value="1">
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="content">
+                <div class="row">
+
+                    <div class="footer-col">
+                        <h4>Details</h4>
+                        <ul class="list">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Query form</a></li>
+                            <li><a href="../Profile/profile.html" target="_blank">Editor's Page</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul class="list">
+                            <li><a href="#">Site map</a></li>
+                            <li><a href="#">Quiz</a></li>
+                            <li><a href="#">Order status</a></li>
+                            <li><a href="#">Payment option</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul class="list">
+                            <li><a href="#">Albums</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

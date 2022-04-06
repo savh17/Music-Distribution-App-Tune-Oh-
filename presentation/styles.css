@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #a4508b;
+    background-image: url("images/background.jpg");
+}
+
+div {
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 25px;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+li {
+    line-height: 2;
+}
